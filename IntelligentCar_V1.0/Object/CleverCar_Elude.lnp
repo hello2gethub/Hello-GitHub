@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"..\object\main.o"
+"..\object\delay.o"
+"..\object\led.o"
+"..\object\pwm.o"
+"..\object\motordrive.o"
+"..\object\trail.o"
+"..\object\elude.o"
+"..\object\key.o"
+"..\object\misc.o"
+"..\object\stm32f10x_gpio.o"
+"..\object\stm32f10x_rcc.o"
+"..\object\stm32f10x_tim.o"
+"..\object\stm32f10x_exti.o"
+"..\object\stm32f10x_spi.o"
+"..\object\stm32f10x_usart.o"
+"..\object\core_cm3.o"
+"..\object\startup_stm32f10x_md.o"
+"..\object\stm32f10x_it.o"
+"..\object\system_stm32f10x.o"
+"..\object\esp8266.o"
+"..\object\usart.o"
+"..\object\cjson.o"
+"..\object\mqttkit.o"
+"..\object\onenet.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\CleverCar_Elude.map" -o ..\Object\CleverCar_Elude.axf
